@@ -1,9 +1,0 @@
-#container {
-	display: grid;
-	width: 500px;
-	margin-top: 10px;
-}
-
-.childDiv {
-	border: 1px solid #ccc;
-}
