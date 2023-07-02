@@ -4,7 +4,7 @@ body {
 	display: grid;
 	justify-content: center;
 	font-family: 'Poppins', sans-serif;
-	background-color: rgb(255, 244, 180);
+	background-color: rgb(248, 238, 180);
 }
 
 #h1 {
@@ -18,7 +18,7 @@ body {
 	margin-bottom: 2rem;
 	justify-self: center;
 	font-size: 16px;
-	background-color: rgb(255, 244, 180);
+	background-color: rgb(248, 238, 180);
 	border-radius: 8px;
 }
 
