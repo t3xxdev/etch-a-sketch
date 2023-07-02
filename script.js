@@ -17,7 +17,7 @@ function makegrid(x) {
     }
 }
 
-function changeColor(e) {
+function changeColor(e) {  
     let rR = Math.floor(Math.random() * 256)
     let rG = Math.floor(Math.random() * 256)
     let rB = Math.floor(Math.random() * 256)
@@ -40,4 +40,4 @@ reset.addEventListener('click', () => {
     });
 })
 
-makegrid(12);
+makegrid(8);
