@@ -18,24 +18,26 @@ function makegrid(x) {
 }
 
 function changeColor(e) {
-    const rR = Math.floor(Math.random() * 256)
-    const rG = Math.floor(Math.random() * 256)
-    const rB = Math.floor(Math.random() * 256)
+    let rR = Math.floor(Math.random() * 256)
+    let rG = Math.floor(Math.random() * 256)
+    let rB = Math.floor(Math.random() * 256)
 
     const randomColor = `rgb(${rR}, ${rG}, ${rB})`
-    e.target.style.backgroundColor = randomColor
+    e.style.backgroundColor = randomColor
 }
 
-masterDiv.addEventListener('mouseover', changeColor)
-
-reset.addEventListener('click', () => {
-    let gridSize = prompt('Enter the number of squares per side for the new grid (maximum 100):')
-    gridSize = parseInt(gridSize)
-    if (isNaN(gridSize) || gridSize <= 0 || gridSize > 100) {
-      alert('Invalid input. Please enter a number between 1 and 100.')
-    } else {
-      createGrid(gridSize)
-    }
+masterDiv.addEventListener('mouseover', (e) => {
+    changeColor(e.target)
 })
 
-makegrid(4);
+reset.addEventListener('click', () => {
+    const childDivs = document.querySelectorAll('.childDiv')
+
+    childDivs.forEach(childDiv => {
+        if (childDiv.style) {
+            childDiv.style.backgroundColor = 'rgb(255, 255, 255)'
+        }
+    });
+})
+
+makegrid(12);

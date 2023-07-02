@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+	display: grid;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: rgb(255, 244, 180);
+}
+
+#h1 {
+	justify-self: center;
+	font-size: 50px;
+}
+
+#reset {
+	width: 10rem;
+	height: 2rem;
+	margin-bottom: 2rem;
+	justify-self: center;
+	font-size: 16px;
+	background-color: rgb(255, 244, 180);
+	border-radius: 8px;
+}
+
 #container {
 	display: grid;
 	width: 500px;
@@ -6,4 +30,16 @@
 
 .childDiv {
 	border: 1px solid #ccc;
+	background-color: white;
+}
+
+footer {	
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
 }
