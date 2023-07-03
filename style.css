@@ -8,7 +8,6 @@ body {
 }
 
 #h1 {
-	justify-self: center;
 	font-size: 50px;
 }
 
@@ -41,4 +40,16 @@ footer {
 a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
+}
+
+.input {
+	display: flex;
+}
+
+.input input {
+	background-color: rgb(248, 238, 180);
+	height: 2rem;
+	margin-right: 14px;
+	border: none;
+	padding: 0;
 }

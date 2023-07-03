@@ -1,5 +1,16 @@
+const DEAFULT_COLOR = "#000000"
+
+let currentColor = DEAFULT_COLOR
+
 const masterDiv = document.getElementById('container')
 const reset = document.getElementById('reset')
+const colorPicker = document.getElementById('color')
+
+function setCurrentColor(newColor) {
+    currentColor = newColor
+}
+
+colorPicker.oninput = (e) => setCurrentColor(e.target.value)
 
 function makegrid(x) {
     masterDiv.innerHTML = ""
@@ -18,12 +29,9 @@ function makegrid(x) {
 }
 
 function changeColor(e) {  
-    let rR = Math.floor(Math.random() * 256)
-    let rG = Math.floor(Math.random() * 256)
-    let rB = Math.floor(Math.random() * 256)
-
-    const randomColor = `rgb(${rR}, ${rG}, ${rB})`
-    e.style.backgroundColor = randomColor
+    if (e && e.style) {
+        e.style.backgroundColor = currentColor;
+    }
 }
 
 masterDiv.addEventListener('mouseover', (e) => {
