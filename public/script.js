@@ -5,6 +5,7 @@ let currentColor = DEAFULT_COLOR
 const masterDiv = document.getElementById('container')
 const reset = document.getElementById('reset')
 const colorPicker = document.getElementById('color')
+const rainbowMode = document.getElementById('rainbow')
 
 function setCurrentColor(newColor) {
     currentColor = newColor
