@@ -11,14 +11,31 @@ body {
 	font-size: 50px;
 }
 
-#reset {
-	width: 10rem;
-	height: 2rem;
+input[type="color"] {
+	width: 3vw;
+	height: 3vh;
+	border: none;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: none;
+	border: none;
+}
+
+#rainbow {
+	margin-right: 1rem;
+}
+
+#reset, #rainbow {
+	width: 7rem;
+	height: 3rem;
 	margin-bottom: 2rem;
 	justify-self: center;
 	font-size: 16px;
 	background-color: rgb(248, 238, 180);
-	border-radius: 8px;
+	border-radius: 9px;
 }
 
 #container {
